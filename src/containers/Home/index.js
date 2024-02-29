@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { BsFillPersonFill } from "react-icons/bs";
 import { BsCalendarHeart } from "react-icons/bs";
 import LogoOne from "../../assets/img1.png";
@@ -10,7 +10,7 @@ import { Container, H1, ContainerItens, Input, Button, Image } from "./styles"
 
 const App = () => {
   const [ users, setUsers ] = useState([]);
-  const history = useHistory()
+  const navigate = useNavigate()
   const inputName = useRef();
   const inputAge = useRef();
 
@@ -21,7 +21,7 @@ const App = () => {
 
     setUsers([...users, newUser])
 
-    history.push('/usuarios')
+    navigate('/usuarios')
 
   }
 

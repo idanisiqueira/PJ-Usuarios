@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useHistory } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import { BsFillTrashFill } from "react-icons/bs";
 import LogoTwo from "../../assets/img2.png";
 import axios from "axios";
@@ -9,7 +9,7 @@ import { Container, H1, ContainerItens, Button, Image, User } from "./styles"
 
 const Users = () => {
   const [ users, setUsers ] = useState([]);
-  const history = useHistory()
+  const navigate = useNavigate()
 
   useEffect( () => { //é um REACT HOOK, onde terá uma função que vai ser chamada assim que a aplicação for iniciada
     async function fetchUsers(){
@@ -30,7 +30,7 @@ const Users = () => {
   }
 
   function goBackPage(){
-    history.push('/')
+    navigate('/')
   }
 
   return (
