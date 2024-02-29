@@ -15,15 +15,6 @@ export const Image = styled.img `
 width: 200px;
 margin: 50px auto;
 `
-
-export const ContainerItens = styled.div`
-border-radius: 31px 31px 0px 0px;
-padding: 50px 36px;
-display: flex;
-flex-direction: column;
-height: 100vh;
-`;
-
 export const Input = styled.input`
 border-radius: 5px;
 background: rgba(255, 255, 255,0.5);

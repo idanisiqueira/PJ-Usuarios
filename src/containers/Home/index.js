@@ -4,10 +4,11 @@ import { BsFillPersonFill } from "react-icons/bs";
 import { BsCalendarHeart } from "react-icons/bs";
 import LogoOne from "../../assets/img1.png";
 import H1 from "../../components/Title"
+import ContainerItens from "../../components/ContainerItens"
 import axios from "axios";
 
 
-import { Container, ContainerItens, Input, Button, Image } from "./styles"
+import { Container, Input, Button, Image } from "./styles"
 
 const App = () => {
   const [ users, setUsers ] = useState([]);

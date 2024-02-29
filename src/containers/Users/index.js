@@ -3,10 +3,11 @@ import { useNavigate } from "react-router-dom"
 import { BsFillTrashFill } from "react-icons/bs";
 import LogoTwo from "../../assets/img2.png";
 import H1 from "../../components/Title"
+import ContainerItens from "../../components/ContainerItens";
 import axios from "axios";
 
 
-import { Container, ContainerItens, Button, Image, User } from "./styles"
+import { Container, Button, Image, User } from "./styles"
 
 const Users = () => {
   const [ users, setUsers ] = useState([]);
@@ -36,7 +37,7 @@ const Users = () => {
 
   return (
     <Container>
-      <ContainerItens>
+      <ContainerItens isAll={true}>
         <H1>USUÁRIOS</H1>
         <Image alt="logo" src={LogoTwo} />
 
