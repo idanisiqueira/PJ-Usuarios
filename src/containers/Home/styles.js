@@ -24,15 +24,6 @@ flex-direction: column;
 height: 100vh;
 `;
 
-export const H1 = styled.h1`
-color: #fff;
-font-family: 'Karla', sans-serif;
-font-weight: 700;
-font-size: 34px;
-margin-bottom: 30px;
-text-align: center;
-`;
-
 export const Input = styled.input`
 border-radius: 5px;
 background: rgba(255, 255, 255,0.5);

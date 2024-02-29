@@ -2,10 +2,11 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom"
 import { BsFillTrashFill } from "react-icons/bs";
 import LogoTwo from "../../assets/img2.png";
+import H1 from "../../components/Title"
 import axios from "axios";
 
 
-import { Container, H1, ContainerItens, Button, Image, User } from "./styles"
+import { Container, ContainerItens, Button, Image, User } from "./styles"
 
 const Users = () => {
   const [ users, setUsers ] = useState([]);
